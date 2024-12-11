@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    #timeline {
+      width: 100%;
+      height: 600px;
+      margin: auto;
+    }
+    .headline-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .headline-container h1 {
+      font-size: 2.5rem;
+      color: #002b5c;
+      margin: 0;
+    }
+    .headline-container p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline-container">
+    <h3>TIMELINE</h3>
+    <h1>History Rooted in Health Equity and Health Disparities Research</h1>
+  </div>
+
+  <div id="timeline"></div>
+
+  <script>
+    var timelineData = {
+      "title": {
+        "text": {
+          "headline": "History Rooted in Health Equity and Health Disparities Research",
+          "text": "A timeline highlighting significant milestones in health equity and disparities research at UI Health."
+        }
+      },
+      "events": [
+        {
+          "start_date": { "year": "1987" },
+          "end_date": { "year": "1994" },
+          "text": {
+            "headline": "Tapas Das Gupta, MD - 1st Director",
+            "text": "Launched the Diverse Biorepository. Key efforts included community interventions for cancer prevention (P01CA042760)."
+          },
+          "media": {
+            "url": "https://via.placeholder.com/150",
+            "caption": "Tapas Das Gupta, MD"
+          }
+        },
+        {
+          "start_date": { "year": "1980" },
+          "end_date": { "year": "1999" },
+          "text": {
+            "headline": "Richard Warnecke, PhD",
+            "text": "Launched Health Disparities & Cancer Control Research. Key focus on cancer control and population sciences."
+          },
+          "media": {
+            "url": "https://via.placeholder.com/150",
+            "caption": "Richard Warnecke, PhD"
+          }
+        },
+        {
+          "start_date": { "year": "2007" },
+          "end_date": { "year": "2011" },
+          "text": {
+            "headline": "Gary Kruh, MD - 4th Director",
+            "text": "Established the first comprehensive Patient Navigation Center at UIC. Key projects included the UIC Center for Population Health and Health Disparities (P50 CA106743) and Cancer Education and Career Development (T32CA057699)."
+          },
+          "media": {
+            "url": "https://via.placeholder.com/150",
+            "caption": "Gary Kruh, MD"
+          }
+        },
+        {
+          "start_date": { "year": "2015" },
+          "end_date": { "year": "2019" },
+          "text": {
+            "headline": "Robert A. Winn, MD - 6th Director",
+            "text": "Initiated a community focus with the Chicago Cancer Health Equity Collaborative (CHEC) (U54CA202995)."
+          },
+          "media": {
+            "url": "https://via.placeholder.com/150",
+            "caption": "Robert A. Winn, MD"
+          }
+        },
+        {
+          "start_date": { "year": "2020" },
+          "text": {
+            "headline": "Jan Kitajewski, PhD - 7th Director (Present)",
+            "text": "Focused on community-to-bench research. Established the ACS Illinois Cancer Health Equity Research Center (I-CHER) (MSI-21-168-01)."
+          },
+          "media": {
+            "url": "https://via.placeholder.com/150",
+            "caption": "Jan Kitajewski, PhD"
+          }
+        }
+      ]
+    };
+
+    window.timeline = new TL.Timeline('timeline', timelineData);
+  </script>
+</body>
+</html>
